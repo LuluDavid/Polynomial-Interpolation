@@ -7,19 +7,19 @@ The final report (in french) is accessible [here](https://drive.google.com/file/
 
 ## Polynomials
 
-I introduced polynomials as lists of coefficients, and defined on them in **Polynomes.py**. A few utils are also introduced there : polynomial sum, polynomial constant, polynomial product, polynomial image, polynomial integral and derivate function, polynomial display with *matplotlib.pyplot*.
+I introduced polynomials as lists of coefficients, and defined on them in **py**. A few utils are also introduced there : polynomial sum, polynomial constant, polynomial product, polynomial image, polynomial integral and derivate function, polynomial display with *matplotlib.pyplot*.
 
 ## Lagrange
 
 In the file **Lagrange.py**, we introduce the Lagrange polynomials, and their representation. Here are the function's specs :
-  * *polynome_lagrange_i(xcoords, i)* : calculate Lagrange's ith polynomial in the Lagrange's formula for xcoords
-  * *polynome_lagrange(xcoords, ycoords)* : calculate Lagrange's polynomial for xcoords, ycoords
-  * *trace_lagrange(xcoords, ycoords)* : calculate and then display Lagrange's polynomial on xcoords
-  * *trace_lagrange_fonction(xcoords, f)* : do the preveious operation with ```ycoords = map f xcoords```
-  * *Lagrange_Tchebychev(f, a, b, n)* : calculate Tchebychev's coordinates (for degree n), and calculate Lagrange's polynomial for these xcoords (they should limit the polynomial's sup between a and b for all n degree polynomials)
-  * *trace_Lagrange_Tchebychev(f, a, b, n)* : display the previous polynomial on generated xcoords
-  * *Newton_Cotes(f, a, b, n)* : calculate the n-th Newton-Côtes formula thanks to Lagrange's polynomials (integral approximation)
-  * *integrale_interp(f, a, b, n)* : calculate the function's integral approximation thanks to its n-th degree tchebychev polynomial calculated between a and b
+  * *lagrange_polynomial_i(xcoords, i)* : calculate Lagrange's ith polynomial in the Lagrange's formula for xcoords
+  * *lagrange_polynomial(xcoords, ycoords)* : calculate Lagrange's polynomial for xcoords, ycoords
+  * *lagrange_graph(xcoords, ycoords)* : calculate and then display Lagrange's polynomial on xcoords
+  * *lagrange_graph_function(xcoords, f)* : do the preveious operation with ```ycoords = map f xcoords```
+  * *lagrange_tchebychev(f, a, b, n)* : calculate Tchebychev's coordinates (for degree n), and calculate Lagrange's polynomial for these xcoords (they should limit the polynomial's sup between a and b for all n degree polynomials)
+  * *lagrange_tchebychev_graph(f, a, b, n)* : display the previous polynomial on generated xcoords
+  * *newton_cotes(f, a, b, n)* : calculate the n-th Newton-Côtes formula thanks to Lagrange's polynomials (integral approximation)
+  * *tchebychev_integral(f, a, b, n)* : calculate the function's integral approximation thanks to its n-th degree tchebychev polynomial calculated between a and b
 
 ## L'Hermite
 
@@ -27,7 +27,7 @@ In the file **L'Hermite.py**, it is quite similar to Lagrange's functions, excep
 
 ## Points interpolation
 
-In the file **Interpolation_nuage_points.py**, I defined a simple function *Lagrange_Tchebychev_points(xcoords, ycoords, n)* to calculate the nearest points to n degree Tchebychev points between min and max of xcoords, and interpolate those points with a Lagrange polynomial, to then display it. 
+In the file **Interpolation_nuage_points.py**, I defined a simple function *lagrange_tchebychev_points(xcoords, ycoords, n)* to calculate the nearest points to n degree Tchebychev points between min and max of xcoords, and interpolate those points with a Lagrange polynomial, to then display it. 
 
 The goal is to define a good polynomial interpolation for a set of points.
 
@@ -39,7 +39,7 @@ I could try it with l'Hermite's interpolation one day.
 
 ## Cubic Splines
 
-In the file **Splines.py**, I defined *splines_cubiques(f, a, b, n)*, which displays the n subdivision cubic splines interpolation on function f between a and b (and an alternative definition *splines_cubiques2*, as well as in another file, but it is not that important).
+In the file **Splines.py**, I defined *cubic_splines(f, a, b, n)*, which displays the n subdivision cubic splines interpolation on function f between a and b (and an alternative definition *cubic_splines2*, as well as in another file, but it is not that important).
 
 I also defined a function *interp_splines(f, a, b, n)* to approximate the integral of f between a and b with the sum of the splines integrals.
 
