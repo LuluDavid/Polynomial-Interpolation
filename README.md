@@ -51,9 +51,7 @@ You just need to run the file (after having run the other files to access their 
 
 ## TODO
 
-As you can see, this project is quite old, and there are no imports, because I had a minimal knowledge of python.
-Moreover, it's written entirely in french, which is not a good thing.
-Finally, the associated report is also in french, which does not help to understand.
+The associated report is in french, which does not help to understand.
 I might work at it when I have time, but for the moment it will stay like that.
 
 If you have any recommandation, do not hesitate to message me or to submit a pull request.
