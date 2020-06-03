@@ -7,7 +7,7 @@ The final report (in french) is accessible [here](https://drive.google.com/file/
 
 ## Polynomials
 
-I introduced polynomials as lists of coefficients, and defined on them in **py**. A few utils are also introduced there : polynomial sum, polynomial constant, polynomial product, polynomial image, polynomial integral and derivate function, polynomial display with *matplotlib.pyplot*.
+I introduced polynomials as lists of coefficients, and defined on them in **polynomials.py**. A few utils are also introduced there : polynomial sum, polynomial constant, polynomial product, polynomial image, polynomial integral and derivate function, polynomial display with *matplotlib.pyplot*.
 
 ## Lagrange
 
@@ -23,29 +23,29 @@ In the file **Lagrange.py**, we introduce the Lagrange polynomials, and their re
 
 ## L'Hermite
 
-In the file **L'Hermite.py**, it is quite similar to Lagrange's functions, except this time it is done for Hermite's interpolation
+In the file **hermite.py**, it is quite similar to Lagrange's functions, except this time it is done for Hermite's interpolation
 
 ## Points interpolation
 
-In the file **Interpolation_nuage_points.py**, I defined a simple function *lagrange_tchebychev_points(xcoords, ycoords, n)* to calculate the nearest points to n degree Tchebychev points between min and max of xcoords, and interpolate those points with a Lagrange polynomial, to then display it. 
+In the file **scatter_interpolation.py**, I defined a simple function *lagrange_tchebychev_pts(xcoords, ycoords, n)* to calculate the nearest points to n degree Tchebychev points between min and max of xcoords, and interpolate those points with a Lagrange polynomial, to then display it. 
 
 The goal is to define a good polynomial interpolation for a set of points.
 
 ## 2D interpolation
 
-In the file **InterpolationLagrange2D.py**, I tried to simply interpolation according to two directions, x and y, and then applied it to a picture where I set some colors at the extremal points of the picture, and then interpolated the colors between them, which gave the following result.
+In the file **lagrange2D.py**, I tried to simply interpolation according to two directions, x and y, and then applied it to a picture where I set some colors at the extremal points of the picture, and then interpolated the colors between them, which gave the following result.
 
 I could try it with l'Hermite's interpolation one day.
 
 ## Cubic Splines
 
-In the file **Splines.py**, I defined *cubic_splines(f, a, b, n)*, which displays the n subdivision cubic splines interpolation on function f between a and b (and an alternative definition *cubic_splines2*, as well as in another file, but it is not that important).
+In the file **cubic_splines.py**, I defined *cubic_splines(f, a, b, n)*, which displays the n subdivision cubic splines interpolation on function f between a and b (and an alternative definition *cubic_splines2*, as well as in another file, but it is not that important).
 
 I also defined a function *interp_splines(f, a, b, n)* to approximate the integral of f between a and b with the sum of the splines integrals.
 
 ## Comparison
 
-I compared all those methods, plus *truncated power series*, in the file **ComparaisonErreurIntegrale.py**, on well known functions, such as the exponential, cosh, sinh, cos and sin.
+I compared all those methods, plus *truncated power series*, in the file **integral_comparison.py**, on well known functions, such as the exponential, cosh, sinh, cos and sin.
 
 You just need to run the file (after having run the other files to access their definitions), and then choose the degree n, and the interval [a , b].
 
