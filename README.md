@@ -1,7 +1,7 @@
 # Polynomial_Interpolation
 
-This git repository is a small implementation of polynomials and their use for interpolation, in the context
-of a work for undergraduate courses in France (TIPE in Prepa).
+This git repository is an implementation of polynomials and their use for interpolation, in the context
+of a work for undergraduate courses in France (TIPE in Prepa). It is meant to be use with Pycharm (community version, pure Python), but you are free to use the IDE you prefer (Pyzo, etc.).
 
 The final report (in french) is accessible [here](https://drive.google.com/file/d/1UaUzbZDAs9JtF5YragzRGSl5GUYIQsT2/view?usp=sharing), I might do a latex version on day.
 
